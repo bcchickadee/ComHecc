@@ -6,7 +6,7 @@ class Stack:
     def push(self, item):
         self.__stack__.append(item)
     def pop(self):
-        self.__stack__.pop()
+        return self.__stack__.pop()
     def peek(self):
         if not self.isEmpty():
             return self.__stack__[-1]
@@ -27,7 +27,7 @@ class Queue:
         self.__queue__.append(e)
     def dequeue(self):
         if not self.isEmpty():
-            self.__queue__.pop(0)
+            return self.__queue__.pop(0)
     def isEmpty(self):
         return not(bool(len(self.__queue__)))
     def peek(self):
