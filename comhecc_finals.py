@@ -15,7 +15,7 @@ class Stack:
     def size(self):
         return len(self.__stack__)
     def __str__(self):
-        t = str(self.__stack__[1:-1])
+        t = str(self.__stack__)[1:-1]
         return 'S<'+t+'>S'
 
 
